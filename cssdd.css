@@ -1,0 +1,36 @@
+header {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    background-color: #666;
+    padding: 2vh;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 10vh;
+}
+
+.bgbody {
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-color:darkslategrey;
+    height: 90vh;
+}
+
+#div1 {
+    border-radius: 70px;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    height: auto;
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: 10vh;
+}
+
+#acp (
+)
