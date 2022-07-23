@@ -6,14 +6,22 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
-    height: 10vh;
+    height: auto;
 }
 
 .bgbody {
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    background-color:darkslategrey;
-    height: 90vh;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    background-color: darkslategrey;
+    height: auto;
+    margin-top: -200px;
+    margin-left: -400px;
 }
 
 #div1 {
@@ -24,13 +32,35 @@ header {
     height: auto;
 }
 
+#div2 {
+    border-radius: 70px;
+    background-color: ghostwhite;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+}
+#div3 {
+    border-radius: 70px;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    height: auto;
+}
+#div4 {
+    border-radius: 70px;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    height: auto;
+}
+.row{display:flex}
+.row p{display:flex;width:76%;justify-content:flex-end;}
+.row3{display:flex;justify-content:center;}
+.row3 table{width:100%; text-align:center;}
 footer {
     background-color: #777;
     padding: 10px;
     text-align: center;
     color: white;
-    height: 10vh;
+    height: auto;
 }
-
-#acp (
-)
