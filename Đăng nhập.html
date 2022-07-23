@@ -1,0 +1,45 @@
+<html>
+<body>
+
+<form >
+  <label>Tên Đăng Nhập:</label>
+  <input type= "text" id="tdn" name="tendangnhap" value=""><br><br>
+  <label>Mật khẩu:</label>
+  <input type="password" id="mk" name="matkhau" value="" minlength="8"><br><br>
+  <button onclick="check()">Đăng nhập</button>
+  <p id="test1"></p>
+  <p id="test2"></p>
+</form>
+
+<script>
+function check() {
+	var x = document.getElementById("tdn").value;
+	var y = document.getElementById("mk").value;
+	var tdn = "Mask";
+	var mk = "TheMask2";
+	var ketqua1 = x.localeCompare(tdn);
+	var ketqua2 = y.localeCompare(mk);
+	
+	
+	
+	if(x == "") {		
+		document.getElementById("tdn").focus();
+		document.getElementById("tdn").style.background="yellow";
+		setTimeout(function(){document.getElementById("tdn").style.background="white";},2000);
+		alert('Mời bạn nhập tên đăng nhập');
+	}
+	else {
+	if(ketqua1==false && ketqua2==false)
+		{
+			alert('Đăng nhập thành công');
+			window.open("https://www.youtube.com/");
+		}
+	else {alert('Sai mật khẩu hoặc tài khoản đăng nhập');}
+	}
+	
+	document.getElementById("test1").innerHTML = ketqua1;
+	document.getElementById("test2").innerHTML = ketqua2;
+}
+</script>
+</body>
+</html>
